@@ -1,0 +1,31 @@
+===================================================================
+INDUSTRY 4.0 OCR ASSET TRACKING - COMMAND SETUP & EXECUTION GUIDE
+===================================================================
+
+1. CLONE THE REPOSITORY:
+git clone https://github.com/your-username/industry4.0-ocr-asset-tracking.git
+cd industry4.0-ocr-asset-tracking
+
+2. CREATE & ACTIVATE VIRTUAL ENVIRONMENT:
+# Windows:
+python -m venv venv
+venv\Scripts\activate
+
+# Linux / macOS:
+python3 -m venv venv
+source venv/bin/activate
+
+3. INSTALL DEPENDENCIES:
+pip install --upgrade pip
+pip install -r requirements.txt
+
+4. ENVIRONMENT CONFIGURATION (OPTIONAL):
+cp .env.example .env
+
+5. RUN PIPELINE SCRIPTS:
+# Run main pipeline (Training, OpenCV Segmentation & Scan Simulation)
+python cnnocrproject.py
+
+# Run Streamlit Web Application (Frontend Dashboard)
+streamlit run app.py
+===================================================================
